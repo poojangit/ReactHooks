@@ -1,0 +1,88 @@
+------------------------------------REACT HOOKS----------------------------
+
+React hooks are the addition features that are added from 16.8 version. that allow us to use React features without having to write a class.
+
+....................................why react hooks??--------------------------
+
+# In class component we were using this keyword which is more confusing.(no need to use this in hook)
+# No need a remembering every time to bind the event handlers
+# In class componnet, There is no perticular way to reuse the stateful component logic
+# hooks will helps to reuse the stateful logic without changing the component heirarchy
+
+------------------------------------UseState Hook--------------------------
+
+# it is a fundamental hook in react that allows us to add state to functional components.
+# When you call useState, you pass the initial state as an argument, and it returns an array with two elements:
+The current state value.
+A function to update that state.
+
+Syntax : const [state, setState] = useState(initialState);
+
+
+-------------------------------------UseEffect Hook------------------------------------
+
+# this is used to avoid the side effect
+# in class components, we come accross some side effects while fetching the api, updating the dom, setting up the timmer. so we were using lifecycle methods
+# The useEffect hook is analogous to lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount in class components.
+# The useEffect hook takes two arguments:
+Effect Function: This is the function where you perform your side effect. This function is executed after the component renders or updates.
+Dependency Array (optional): An array of dependencies that determine when the effect should run. If a dependency value changes, the effect runs again. If this array is empty, the effect runs only once after the initial render.
+
+Syntax:
+
+import React, { useEffect } from 'react';
+
+useEffect(() => {
+  // Your side effect code here
+
+  return () => {
+    // Cleanup code here (optional)
+  };
+}, [dependencies]); // Dependencies array (optional)
+
+------------------------------------useRef hook ----------------------------------
+
+# useRef allows us to create mutable variables , which will not re-render the component.
+# useRef is also used for accessing DOM elements
+
+---------------------------------useMemo hook--------------------------
+
+# The react useMemo Hook returns a memoized value. (its's like caching a value that it doesn't need to be recalculated. )
+# useMemo hook only runs when One of its dependencies get updated
+# This can improve the performance of the app. 
+
+---------------------------------useCallBack hook--------------------------
+
+# returns a memoized function
+# This can improve the performance of the application
+# UseCallBack is a React Hook that lets you cache a function defination between re-renders.
+# it means, when we use the useCallback Hook, it doesn't create multiple instance of same function when re-render happens
+# instead of creating new instance of the function, it provides the cached function on re-render of the component
+
+--------------------------------useContext----------------------------
+
+# useContext is a React Hook that allows you access data from any component without explicitly passing it down through props at every level
+# useContext is used to manage global data in the react app
+
+-------------------------------useReducer Hook---------------------
+
+# useReducer is similar to useState, but instead of providing state and setter function, It provieds state and dispatch function.
+# the useReducer hook accepts two arguments
+  - Reducer function
+  - initial state
+  and returns : current state and dispatch method
+# the reducer function specifies how the state gets updated4
+# the reducer function accepts two parameter 
+  - current state
+  - action
+  
+  --------------------------useLayoutEffect hook --------------------------------
+  
+ # uselayoutEffect works similar to useEffect , but it is called before the User Interface gets mounted
+# useEffects gets called after printing the dom elements but useLayoutEffect gets called after printing the dom elements.
+
+
+---------------------------Custom hook-------------------------------
+
+# react allows us to create our own hook which is known as custom hook
+# why --> we have the component logic which we have to use multiple times. we can extract that logic to create a custom hook
