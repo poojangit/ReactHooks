@@ -12,6 +12,7 @@ import UseLayoutEffectOne from './components/useLayoutEffect/UseLayoutEffectOne'
 import UseMemoOne from './components/useMemo/UseMemoOne';
 import UseReducerOne from './components/useReducer/UseReducerOne';
 import UseRefOne from './components/useRef/UseRefOne';
+import UseRefThree from './components/useRef/UseRefThree';
 import UseRefTwo from './components/useRef/UseRefTwo';
 import ClassCounter from './components/useState/ClassCounter';
 import HookCounter from './components/useState/HookCounter';
@@ -30,8 +31,9 @@ function App() {
       {/* <UseEffectDemo/>
       <UseEffectClass/> */}
 
-      {/* <UseRefOne/>
-      <UseRefTwo/> */}
+      <UseRefOne/>
+      <UseRefTwo/>
+      <UseRefThree/>
 
       {/* <UseMemoOne/> */}
       
@@ -46,7 +48,7 @@ function App() {
 
       {/* <UseLayoutEffectOne/> */}
 
-      <CustomHookOne/>
+      {/* <CustomHookOne/> */}
     </div>
   );
 }
