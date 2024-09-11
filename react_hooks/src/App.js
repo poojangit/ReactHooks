@@ -6,8 +6,11 @@ import Contact from './components/useContext/Contact';
 import Footer from './components/useContext/Footer';
 import Profile from './components/useContext/Profile';
 import UseContextOne from './components/useContext/UseContextOne';
+import UseDebugValue from './components/useDebugValue/UseDebugValue';
+import UseDefferedValue from './components/useDefferedValue/UseDefferedValue';
 import UseEffectClass from './components/useEffect/UseEffectClass';
 import UseEffectDemo from './components/useEffect/UseEffectDemo';
+import UseId from './components/useId/UseId';
 import UseLayoutEffectOne from './components/useLayoutEffect/UseLayoutEffectOne';
 import UseMemoOne from './components/useMemo/UseMemoOne';
 import UseReducerOne from './components/useReducer/UseReducerOne';
@@ -19,6 +22,8 @@ import HookCounter from './components/useState/HookCounter';
 import HookCounterFive from './components/useState/HookCounterFive';
 import HookCounterThree from './components/useState/HookCounterThree';
 import HookCounterTwo from './components/useState/HookCounterTwo';
+// import Demo8 from './demo/Demo8';
+import Demo9 from './demo/Demo9';
 function App() {
   return (
     <div className="App">
@@ -31,9 +36,9 @@ function App() {
       {/* <UseEffectDemo/>
       <UseEffectClass/> */}
 
-      <UseRefOne/>
+      {/* <UseRefOne/>
       <UseRefTwo/>
-      <UseRefThree/>
+      <UseRefThree/> */}
 
       {/* <UseMemoOne/> */}
       
@@ -49,6 +54,11 @@ function App() {
       {/* <UseLayoutEffectOne/> */}
 
       {/* <CustomHookOne/> */}
+
+      {/* <Demo9/> */}
+      {/* <UseDebugValue/> */}
+      {/* <UseDefferedValue/> */}
+      <UseId/>
     </div>
   );
 }

@@ -16,3 +16,7 @@ function UseCallbackOne() {
 }
 
 export default UseCallbackOne;
+
+
+// todo : useCallback remembers your function, so it won't create a new one unless something it depends on changes. This helps improve performance by preventing unnecessary re-renders.
+//todo It returns a memoized version of a function.
