@@ -11,6 +11,8 @@ import UseDefferedValue from './components/useDefferedValue/UseDefferedValue';
 import UseEffectClass from './components/useEffect/UseEffectClass';
 import UseEffectDemo from './components/useEffect/UseEffectDemo';
 import UseId from './components/useId/UseId';
+import FadeInComponent from './components/useInsertionEffect/FadeInComponent';
+import UseInsertionEffect from './components/useInsertionEffect/UseInsertionEffect';
 import UseLayoutEffectOne from './components/useLayoutEffect/UseLayoutEffectOne';
 import UseMemoOne from './components/useMemo/UseMemoOne';
 import UseReducerOne from './components/useReducer/UseReducerOne';
@@ -58,7 +60,11 @@ function App() {
       {/* <Demo9/> */}
       {/* <UseDebugValue/> */}
       {/* <UseDefferedValue/> */}
-      <UseId/>
+      {/* <UseId/> */}
+
+      {/* <UseInsertionEffect/> */}
+
+      <FadeInComponent/>
     </div>
   );
 }

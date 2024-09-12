@@ -21,3 +21,5 @@ function UseRefTwo() {
 }
 
 export default UseRefTwo;
+
+// ^ useRef is used to access the DOM and store the mutable value
