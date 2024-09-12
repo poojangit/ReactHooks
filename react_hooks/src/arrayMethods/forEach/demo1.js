@@ -25,7 +25,7 @@ let count = {}
 
 letter.forEach((item)=>{
     if(count[item]) {
-        count[item]++
+       count[item]++
     }
     else {
         count[item] = 1
